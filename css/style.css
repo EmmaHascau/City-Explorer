@@ -549,3 +549,11 @@ main {
     transition: none !important;
   }
 }
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.3rem;
+  }
+  .section-block h2 {
+    font-size: 1.6rem;
+  }
+}
