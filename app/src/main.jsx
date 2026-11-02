@@ -1,3 +1,7 @@
+import { createRoot } from 'react-dom/client'
+import App from './App.jsx'
+import './index.css'
+
 // Laboratorul 2 =====
 import { destinatii } from './data/destinatii.js';
 import {
@@ -12,6 +16,8 @@ import {
   stergeDestinatie
 } from './utils/destinatii.js';
 import { fetchUsers, fetchUserById } from './api/orase.js';
+
+createRoot(document.getElementById('root')).render(<App />)
 
 // Exercițiul 1
 console.log('L2 Ex. 1 orașe:', getOrase(destinatii));
@@ -38,7 +44,7 @@ async function loadOrase() {
   try {
     const users = await fetchUsers();
     console.log('L2 Ex. 3 am primit', users.length, 'utilizatori');
-    
+
     const oraseList = users.map((u) => u.address.city);
     console.log('L2 Ex. 3 orașe:', oraseList);
 
