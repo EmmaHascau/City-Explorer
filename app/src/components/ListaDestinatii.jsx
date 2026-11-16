@@ -1,19 +1,26 @@
 import DestinatieCard from './DestinatieCard.jsx'
 
-export default function ListaDestinatii({ destinatii, onToggle, onDelete }) {
+export default function ListaDestinatii({ destinatii, onToggle, totalDestinatii, cautare }) {
+  if (totalDestinatii === 0) {
+    return (
+      <p className="gol">
+        Nu există nicio destinație. Adaugă prima din formular.
+      </p>
+    )
+  }
+
   if (destinatii.length === 0) {
-    return <p className="info">Nu există nicio destinație.</p>
+    return (
+      <p className="gol">
+        Niciun rezultat pentru „{cautare}”.
+      </p>
+    )
   }
 
   return (
     <div className="lista">
       {destinatii.map((destinatie) => (
-        <DestinatieCard
-          key={destinatie.id}
-          destinatie={destinatie}
-          onToggle={onToggle}
-          onDelete={onDelete}
-        />
+        <DestinatieCard key={destinatie.id} destinatie={destinatie} onToggle={onToggle} />
       ))}
     </div>
   )

@@ -1,0 +1,66 @@
+{
+  "orase": [
+    {
+      "id": "1",
+      "oras": "Madrid",
+      "tara": "Spania",
+      "pret": 520
+    },
+    {
+      "id": "2",
+      "oras": "Barcelona",
+      "tara": "Spania",
+      "pret": 480
+    },
+    {
+      "id": "3",
+      "oras": "Praga",
+      "tara": "Cehia",
+      "pret": 310
+    },
+    {
+      "id": "4",
+      "oras": "Viena",
+      "tara": "Austria",
+      "pret": 390
+    }
+  ],
+  "destinatii": [
+    {
+      "id": "1",
+      "oras": "Umbria",
+      "tara": "Italia",
+      "zile": 4,
+      "vizitat": false
+    },
+    {
+      "id": "2",
+      "oras": "Vejle",
+      "tara": "Danemarca",
+      "zile": 2,
+      "vizitat": true
+    },
+    {
+      "id": "3",
+      "oras": "Heidelberg",
+      "tara": "Germania",
+      "zile": 3,
+      "vizitat": false
+    },
+    {
+      "id": "4",
+      "oras": "Hallstatt",
+      "tara": "Austria",
+      "zile": 2,
+      "vizitat": true
+    },
+    {
+      "id": "5",
+      "oras": "Eindhoven",
+      "tara": "Olanda",
+      "zile": 3,
+      "vizitat": false
+    }
+   
+  ]
+}
